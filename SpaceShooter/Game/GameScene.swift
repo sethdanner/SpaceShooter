@@ -12,6 +12,8 @@ import CoreMotion
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    
+    // MARK: Properties
     var starfield: SKEmitterNode!
     var player: SKSpriteNode!
     var scoreLabel: SKLabelNode!
@@ -25,20 +27,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var possibleAliens = ["alien", "alien2", "alien3"]
     let alienCategory: UInt32 = 0x1 << 1
     let photonTorpedoCategory: UInt32 = 0x1 << 0
-    
     let motionManager = CMMotionManager()
     var xAcceleration: CGFloat = 0
-    
     var livesArray: [SKSpriteNode]!
     
     override func didMove(to view: SKView) {
+        
+        self.backgroundColor = .black
         
         addLives()
         
         // MARK: Starfield
         starfield = SKEmitterNode(fileNamed: "Starfield")
-        // Starfield position hard coded for now specific to plus size iphone screens
-        starfield.position = CGPoint(x: 0, y: 1472)
+        starfield.position = CGPoint(x: self.frame.size.width, y: size.height)
         starfield.advanceSimulationTime(10)
         self.addChild(starfield)
         starfield.zPosition = -1
@@ -129,6 +130,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     let transition = SKTransition.flipHorizontal(withDuration: 0.5)
                     let gameOver = SKScene(fileNamed: "GameOverScene") as! GameOverScene
                     gameOver.score = self.score
+                    gameOver.scaleMode = .aspectFill
                     self.view?.presentScene(gameOver, transition: transition)
                 }
             }
