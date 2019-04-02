@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		603F4DF42246CB67008370DF /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 603F4DF22246CB66008370DF /* explosion.mp3 */; };
-		603F4DF52246CB67008370DF /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 603F4DF32246CB66008370DF /* torpedo.mp3 */; };
+		603F4DF52246CB67008370DF /* torpedoOld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 603F4DF32246CB66008370DF /* torpedoOld.mp3 */; };
 		603F4DFA2246CD8B008370DF /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 603F4DF82246CD8B008370DF /* Explosion.sks */; };
 		603F4DFB2246CD8B008370DF /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 603F4DF92246CD8B008370DF /* Starfield.sks */; };
 		603F4E05224725FE008370DF /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 603F4E04224725FE008370DF /* spark.png */; };
 		603F4E0A22481C85008370DF /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 603F4E0922481C85008370DF /* MenuScene.sks */; };
 		603F4E0C2248209E008370DF /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F4E0B2248209E008370DF /* MenuScene.swift */; };
-		60C967B9224DDA9200CF275D /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60C967B8224DDA9200CF275D /* lose.mp3 */; };
+		605C365E2252EE3E00CA788D /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 605C365D2252EE3E00CA788D /* lose.mp3 */; };
+		605C36602252F0F700CA788D /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 605C365F2252F0F700CA788D /* torpedo.mp3 */; };
+		605C36622252F0FD00CA788D /* torpedo2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 605C36612252F0FD00CA788D /* torpedo2.mp3 */; };
+		605C366C225303A400CA788D /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 605C366B225303A400CA788D /* gameOver.mp3 */; };
+		60C967B9224DDA9200CF275D /* loseOld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60C967B8224DDA9200CF275D /* loseOld.mp3 */; };
 		60C967BB224DDC0D00CF275D /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 60C967BA224DDC0D00CF275D /* GameOverScene.sks */; };
 		60C967BD224DDC2100CF275D /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C967BC224DDC2100CF275D /* GameOverScene.swift */; };
 		60E391292246C92800BDD62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E391282246C92800BDD62C /* AppDelegate.swift */; };
@@ -29,13 +33,17 @@
 
 /* Begin PBXFileReference section */
 		603F4DF22246CB66008370DF /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
-		603F4DF32246CB66008370DF /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		603F4DF32246CB66008370DF /* torpedoOld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedoOld.mp3; sourceTree = "<group>"; };
 		603F4DF82246CD8B008370DF /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		603F4DF92246CD8B008370DF /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 		603F4E04224725FE008370DF /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		603F4E0922481C85008370DF /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		603F4E0B2248209E008370DF /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
-		60C967B8224DDA9200CF275D /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		605C365D2252EE3E00CA788D /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		605C365F2252F0F700CA788D /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		605C36612252F0FD00CA788D /* torpedo2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo2.mp3; sourceTree = "<group>"; };
+		605C366B225303A400CA788D /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
+		60C967B8224DDA9200CF275D /* loseOld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loseOld.mp3; sourceTree = "<group>"; };
 		60C967BA224DDC0D00CF275D /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		60C967BC224DDC2100CF275D /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		60E391252246C92800BDD62C /* SpaceShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				603F4DF22246CB66008370DF /* explosion.mp3 */,
-				603F4DF32246CB66008370DF /* torpedo.mp3 */,
-				60C967B8224DDA9200CF275D /* lose.mp3 */,
+				603F4DF32246CB66008370DF /* torpedoOld.mp3 */,
+				60C967B8224DDA9200CF275D /* loseOld.mp3 */,
+				605C365D2252EE3E00CA788D /* lose.mp3 */,
+				605C365F2252F0F700CA788D /* torpedo.mp3 */,
+				605C36612252F0FD00CA788D /* torpedo2.mp3 */,
+				605C366B225303A400CA788D /* gameOver.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -201,17 +213,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603F4DF52246CB67008370DF /* torpedo.mp3 in Resources */,
+				605C36622252F0FD00CA788D /* torpedo2.mp3 in Resources */,
+				603F4DF52246CB67008370DF /* torpedoOld.mp3 in Resources */,
+				605C366C225303A400CA788D /* gameOver.mp3 in Resources */,
+				605C36602252F0F700CA788D /* torpedo.mp3 in Resources */,
 				60C967BB224DDC0D00CF275D /* GameOverScene.sks in Resources */,
 				603F4DF42246CB67008370DF /* explosion.mp3 in Resources */,
 				603F4DFB2246CD8B008370DF /* Starfield.sks in Resources */,
 				60E391342246C92800BDD62C /* Main.storyboard in Resources */,
 				60E3912B2246C92800BDD62C /* GameScene.sks in Resources */,
-				60C967B9224DDA9200CF275D /* lose.mp3 in Resources */,
+				60C967B9224DDA9200CF275D /* loseOld.mp3 in Resources */,
 				603F4E05224725FE008370DF /* spark.png in Resources */,
 				60E391362246C92A00BDD62C /* Assets.xcassets in Resources */,
 				60E391392246C92A00BDD62C /* LaunchScreen.storyboard in Resources */,
 				603F4E0A22481C85008370DF /* MenuScene.sks in Resources */,
+				605C365E2252EE3E00CA788D /* lose.mp3 in Resources */,
 				60E3912D2246C92800BDD62C /* Actions.sks in Resources */,
 				603F4DFA2246CD8B008370DF /* Explosion.sks in Resources */,
 			);

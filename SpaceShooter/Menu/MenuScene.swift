@@ -31,15 +31,15 @@ class MenuScene: SKScene {
         gameTitleLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 175)
         
         newGameButtonNode = self.childNode(withName: "newGameButton") as! SKSpriteNode
-        newGameButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 275)
+        newGameButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 265)
         newGameButtonNode.texture = SKTexture(imageNamed: "newGameButton")
         
         difficultyButtonNode = self.childNode(withName: "difficultyButton") as! SKSpriteNode
-        difficultyButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 350)
+        difficultyButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 340)
         difficultyButtonNode.texture = SKTexture(imageNamed: "difficultyButton")
         
         difficultyLabelNode = self.childNode(withName: "difficultyLabel") as! SKLabelNode
-        difficultyLabelNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 450)
+        difficultyLabelNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 420)
         
         let userDefaults = UserDefaults.standard
         

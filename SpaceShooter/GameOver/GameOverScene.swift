@@ -23,6 +23,9 @@ class GameOverScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        self.run(SKAction.playSoundFileNamed("lose.mp3", waitForCompletion: false))
+        self.run(SKAction.playSoundFileNamed("gameOver.mp3", waitForCompletion: false))
+        
         starfield = SKEmitterNode(fileNamed: "Starfield")
         starfield.position = CGPoint(x: self.frame.size.width, y: size.height)
         starfield.advanceSimulationTime(10)
@@ -33,14 +36,14 @@ class GameOverScene: SKScene {
         gameOverLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 175)
         
         scoreLabel = self.childNode(withName: "scoreLabel") as! SKLabelNode
-        scoreLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 235)
+        scoreLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 245)
         
         scoreTotalLabel = self.childNode(withName: "scoreTotalLabel") as! SKLabelNode
-        scoreTotalLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 285)
+        scoreTotalLabel.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 295)
         scoreTotalLabel.text = "\(score)"
         
         newGameButtonNode = self.childNode(withName: "startOverButton") as! SKSpriteNode
-        newGameButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 345)
+        newGameButtonNode.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height - 370)
         newGameButtonNode.texture = SKTexture(imageNamed: "startOverButton")
     }
     
