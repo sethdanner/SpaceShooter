@@ -17,6 +17,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var starfield: SKEmitterNode!
     var player: SKSpriteNode!
     var scoreLabel: SKLabelNode!
+    
     var score: Int = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
@@ -64,7 +65,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         var timeInterval = 0.75
         
         if UserDefaults.standard.bool(forKey: "hard") {
-            timeInterval = 0.3
+            timeInterval = 0.1
         }
         
         gameTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)
@@ -173,24 +174,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
-        
+
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
-        
+
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
-            
+
             firstBody = contact.bodyA
             secondBody = contact.bodyB
-            
+
         } else {
-            
+
             firstBody = contact.bodyB
             secondBody = contact.bodyA
         }
-        
+
         if (firstBody.categoryBitMask & photonTorpedoCategory) != 0 && (secondBody.categoryBitMask & alienCategory) != 0 {
-            
-            torpedoDidCollideWithAlien(torpedoNode: firstBody.node as! SKSpriteNode, alienNode: secondBody.node as! SKSpriteNode)
+
+            if firstBody.node != nil && secondBody.node != nil {
+                torpedoDidCollideWithAlien(torpedoNode: firstBody.node as! SKSpriteNode, alienNode: secondBody.node as! SKSpriteNode)
+            }
         }
     }
     
