@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  SpaceShooter
+//  StarshipShooter
 //
 //  Created by Seth Danner on 3/23/19.
 //  Copyright © 2019 Seth Danner. All rights reserved.
@@ -65,7 +65,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         var timeInterval = 0.75
         
         if UserDefaults.standard.bool(forKey: "hard") {
-            timeInterval = 0.1
+            timeInterval = 0.3
         }
         
         gameTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)

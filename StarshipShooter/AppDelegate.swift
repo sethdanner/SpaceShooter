@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SpaceShooter
+//  StarshipShooter
 //
 //  Created by Seth Danner on 3/23/19.
 //  Copyright © 2019 Seth Danner. All rights reserved.

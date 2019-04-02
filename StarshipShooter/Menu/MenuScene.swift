@@ -1,6 +1,6 @@
 //
 //  MenuScene.swift
-//  SpaceShooter
+//  StarshipShooter
 //
 //  Created by Seth Danner on 3/24/19.
 //  Copyright © 2019 Seth Danner. All rights reserved.

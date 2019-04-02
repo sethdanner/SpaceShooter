@@ -1,6 +1,6 @@
 //
 //  GameOverScene.swift
-//  SpaceShooter
+//  StarshipShooter
 //
 //  Created by Seth Danner on 3/28/19.
 //  Copyright © 2019 Seth Danner. All rights reserved.

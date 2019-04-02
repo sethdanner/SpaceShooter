@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/sethdanner/Documents/XCODE/MyProjects/SpaceShooter/StarshipShooter.xcodeproj">
+      location = "self:../StarshipShooter">
    </FileRef>
 </Workspace>
